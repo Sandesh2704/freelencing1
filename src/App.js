@@ -1,13 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Page from './Component/Page';
+import Page from './Component/Page.js'
+
+import Footers from './Component/Footers';
 
 function App() {
   return (
-    <Router>
-      <div className=" w-[100%] h-[100%] px-2 mb-5 md:px-16 lg:px-32 ">
+    <Router>       
         <Page />
-      </div>
+       <Footers/>
     </Router>
   );
 }
