@@ -20,7 +20,7 @@ export default function Forntpage() {
     return (
         <>
             <section className='mx-0 lg:mx-0 xl:mx-20 bg-[#f2ecfd] flex flex-wrap rounded-lg px-7 xl:px-14 mt-10 mb-20'>
-                <div className='relative w-full md:w-full lg:w-7/12 h-auto pt-14 px-5 pb-7 rounded-lg overflow-hidden'>
+                <div className='relative w-full md:w-full lg:w-7/12 h-auto pt-14  px-5 pb-7 rounded-lg overflow-hidden'>
                     <div className='absolute inset-0 bg-[#61399f] mt-14 mx-5 mb-6 rounded-lg -rotate-[5deg] right-4'>
                     </div>
                     <div className='bg-white py-11 px-16 rounded-lg relative z-10'>
