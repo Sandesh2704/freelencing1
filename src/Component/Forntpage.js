@@ -19,11 +19,11 @@ export default function Forntpage() {
 
     return (
         <>
-            <section className='mx-0 lg:mx-0 xl:mx-20 bg-[#f2ecfd] flex flex-wrap rounded-lg px-7 xl:px-14 mt-10 mb-20'>
-                <div className='relative w-full md:w-full lg:w-7/12 h-auto pt-14  px-5 pb-7 rounded-lg overflow-hidden'>
-                    <div className='absolute inset-0 bg-[#61399f] mt-14 mx-5 mb-6 rounded-lg -rotate-[5deg] right-4'>
+            <section className='mx-0 lg:mx-0 xl:mx-20 bg-[#f2ecfd] flex flex-wrap rounded-lg px-7 xl:px-14 mt-10 mb-20 gap-y-11'>
+                <div className='relative w-full md:w-full lg:w-7/12 h-auto pt-14  px-5 pb-7 rounded-lg overflow-hidden  '>
+                    <div className='absolute inset-0 bg-[#61399f] mt-14 mx-5 mb-6 rounded-lg -rotate-[5deg] right-4 hidden lg:block'>
                     </div>
-                    <div className='bg-white py-11 px-16 rounded-lg relative z-10'>
+                    <div className='bg-white md:py-10 md:px-12 lg:py-7 xl:py-11 lg:px-9 xl:px-16 rounded-lg relative z-10'>
                         <div className='text-[#41246e] mb-6 mt-3'>
                             <h2 className='text-[1.6rem] font-bold '>Invest Right, Invest Now With Upstox </h2>
                             <span className='text-2xl font-normal'>Trusted by 1 Crore+ Indians</span>

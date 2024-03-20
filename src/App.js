@@ -8,7 +8,7 @@ import NavBar from './Component/NavBar.js';
 function App() {
   return (
     <Router>      
-      {/* <NavBar/> */}
+      <NavBar/>
       <Forntpage/>
       <Page />
         <Footers/> 
