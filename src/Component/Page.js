@@ -131,6 +131,47 @@ export default function Page() {
                     </nav>
                 </section>
 
+                <section ref={tradeSectionRef} className='w-full mx-auto flex flex-wrap-reverse my-20'>
+                    <div className='w-full md:w-full lg:w-7/12 h-auto p-0 md:p-1 lg:p-4'>
+                        <div className="mb-4">
+                            {currentImage2 && (
+                                <div className="bg-[#f8f7f5] rounded-lg">
+                                    <div className={`block lg:hidden py-5 sm:block md:block text-center `}>
+                                        <p className='text-center text-sm'>{activeButton2 < images1.length ? textSummaries1[activeButton2].summery1 : textSummaries2[activeButton2 - images1.length].summery1}</p>
+                                        <p className='text-center text-sm'>{activeButton2 < images1.length ? textSummaries1[activeButton2].summery2 : textSummaries2[activeButton2 - images1.length].summery2}</p>
+                                    </div>
+                                    <img src={currentImage2} alt="Selected" className="h-96 md:h-45 w-full lg:w-full h-auto rounded-lg rounded-t-none lg:rounded-t-lg lg:object-cover" />
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className='w-full md:w-full lg:w-5/12 p-0 md:p-1 lg:p-4 rounded-lg'>
+                        <div className='mb-5 md:mb-5 lg:mb-11 text-center md:text-cemter lg:text-start'>
+                            <h2 className='text-2xl lg:text-3xl font-bold tracking-wide text-[#41246e] mb-2 '>Upstox for Investors</h2>
+                            <p className='text-[14px] lg:text-base tracking-wide px-2 lg:px-0 text-[#878787] mb-5 lg:mb-0'>Invest Right, Invest Now in Stocks, Mutual Funds, and IPOs</p>
+                            <Link to='' className='px-4 py-2 rounded-full text-xs font-medium border-2 border-[#41246e] text-[#41246e] lg:hidden inline-block'>Read More</Link>
+                        </div>
+                        <ul className="flex lg:flex-col cursor-pointer text-center md:text-start lg:text-start justify-center lg:justify-start ">
+                            {images2.map((image, index) => (
+                                <li
+                                    key={index}
+                                    className={`mb-2  mb-3 md:mb-3 lg:mb-6  pb-3 mb:pb-0 lg:pb-0 px-0 md:px-0 lg:px-6 opacity-50 ${index === activeButton2 ? 'border-b-4 lg:border-l-4 lg:border-b-0  border-[#41246e] opacity-90' : ''}`}
+                                    onClick={() => changeImage2(image, index)}
+                                >
+                                    <h1 className='text-lg font-semibold px-1 md:px-4 lg:px-0'>{textSummaries2[index].head}</h1>
+                                    <div className='hidden lg:inline-block'>
+                                        <p className='text-sm'>{textSummaries2[index].summery1}</p>
+                                        <p className='text-sm'>{textSummaries2[index].summery2}</p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
+                        <div className='px-6 hidden lg:inline-block'>
+                            <Link to='' className='px-4 py-2 rounded-full text-xs font-medium border-2 border-[#41246e] text-[#41246e]'>Read More</Link>
+                        </div>
+                    </div>
+                </section>
+
                 <section ref={investSectionRef} className='w-full mx-auto flex flex-wrap my-14'>
                     <div className='w-full md:w-full lg:w-5/12 h-auto p-0 md:p-1 lg:p-4'>
                         <div className='mb-5 md:mb-5 lg:mb-11 text-center md:text-cemter lg:text-start'>
@@ -142,7 +183,7 @@ export default function Page() {
                             {images1.map((image, index) => (
                                 <li
                                     key={index}
-                                    className={`mb-2  mb-3 md:mb-3 lg:mb-6 pb-3 mb:pb-0 lg:pb-0 px-0 md:px-0 lg:px-6 opacity-50 ${index === activeButton2 ? 'border-b-4 lg:border-l-4 lg:border-b-0  border-[#41246e] opacity-100' : ''}`}
+                                    className={`mb-2  mb-3 md:mb-3 lg:mb-6 pb-3 mb:pb-0 lg:pb-0 px-0 md:px-0 lg:px-6 opacity-50 ${index === activeButton2 ? 'border-b-4 lg:border-l-4 lg:border-b-0  border-[#41246e] opacity-90' : ''}`}
                                     onClick={() => changeImage1(image, index)}
 
                                 >
@@ -173,46 +214,7 @@ export default function Page() {
                     </div>
                 </section>
 
-                <section ref={tradeSectionRef} className='w-full mx-auto flex flex-wrap-reverse my-20'>
-                    <div className='w-full md:w-full lg:w-7/12 h-auto p-0 md:p-1 lg:p-4'>
-                        <div className="mb-4">
-                            {currentImage2 && (
-                                <div className="bg-[#f8f7f5] rounded-lg">
-                                    <div className={`block lg:hidden py-5 sm:block md:block text-center `}>
-                                        <p className='text-center text-sm'>{activeButton2 < images1.length ? textSummaries1[activeButton2].summery1 : textSummaries2[activeButton2 - images1.length].summery1}</p>
-                                        <p className='text-center text-sm'>{activeButton2 < images1.length ? textSummaries1[activeButton2].summery2 : textSummaries2[activeButton2 - images1.length].summery2}</p>
-                                    </div>
-                                    <img src={currentImage2} alt="Selected" className="h-96 md:h-45 w-full lg:w-full h-auto rounded-lg rounded-t-none lg:rounded-t-lg lg:object-cover" />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                    <div className='w-full md:w-full lg:w-5/12 p-0 md:p-1 lg:p-4 rounded-lg'>
-                        <div className='mb-5 md:mb-5 lg:mb-11 text-center md:text-cemter lg:text-start'>
-                            <h2 className='text-2xl lg:text-3xl font-bold tracking-wide text-[#41246e] mb-2 '>Upstox for Investors</h2>
-                            <p className='text-[14px] lg:text-base tracking-wide px-2 lg:px-0 text-[#878787] mb-5 lg:mb-0'>Invest Right, Invest Now in Stocks, Mutual Funds, and IPOs</p>
-                            <Link to='' className='px-4 py-2 rounded-full text-xs font-medium border-2 border-[#41246e] text-[#41246e] lg:hidden inline-block'>Read More</Link>
-                        </div>
-                        <ul className="flex lg:flex-col cursor-pointer text-center md:text-start lg:text-start justify-center lg:justify-start ">
-                            {images2.map((image, index) => (
-                                <li
-                                    key={index}
-                                    className={`mb-2  mb-3 md:mb-3 lg:mb-6  pb-3 mb:pb-0 lg:pb-0 px-0 md:px-0 lg:px-6 opacity-50 ${index === activeButton2 ? 'border-b-4 lg:border-l-4 lg:border-b-0  border-[#41246e] opacity-100' : ''}`}
-                                    onClick={() => changeImage2(image, index)}
-                                >
-                                    <h1 className='text-lg font-semibold px-1 md:px-4 lg:px-0'>{textSummaries2[index].head}</h1>
-                                    <div className='hidden lg:inline-block'>
-                                        <p className='text-sm'>{textSummaries2[index].summery1}</p>
-                                        <p className='text-sm'>{textSummaries2[index].summery2}</p>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                        <div className='px-6 hidden lg:inline-block'>
-                            <Link to='' className='px-4 py-2 rounded-full text-xs font-medium border-2 border-[#41246e] text-[#41246e]'>Read More</Link>
-                        </div>
-                    </div>
-                </section>
+                
 
                 <section ref={learnSectionRef} className='w-full my-20'>
                     <div className='mb-7 lg:mb-10 '>

@@ -61,34 +61,7 @@ export default function Footers() {
         { name: 'Upstox x TradingView', link: '#' }
     ];
     
-    const NavList = [
-        { name: 'A', link: '#' },
-        { name: 'B', link: '#' },
-        { name: 'C', link: '#' },
-        { name: 'D', link: '#' },
-        { name: 'E', link: '#' },
-        { name: 'F', link: '#' },
-        { name: 'G', link: '#' },
-        { name: 'H', link: '#' },
-        { name: 'I', link: '#' },
-        { name: 'J', link: '#' },
-        { name: 'K', link: '#' },
-        { name: 'L', link: '#' },
-        { name: 'M', link: '#' },
-        { name: 'N', link: '#' },
-        { name: 'O', link: '#' },
-        { name: 'P', link: '#' },
-        { name: 'Q', link: '#' },
-        { name: 'R', link: '#' },
-        { name: 'S', link: '#' },
-        { name: 'T', link: '#' },
-        { name: 'U', link: '#' },
-        { name: 'V', link: '#' },
-        { name: 'W', link: '#' },
-        { name: 'X', link: '#' },
-        { name: 'Y', link: '#' },
-        { name: 'Z', link: '#' }
-      ];
+
 
     return (
         <>
@@ -165,9 +138,22 @@ export default function Footers() {
                     </div>
                 </div>
 
+                <div className='px-3 md:px-6   lg:px-6 xl:px-[4.6rem]'>
+                    <div className='px-3 py-6 lg:px-6 xl:px-[4.6rem] text-white flex justify-between flex-wrap font-medium text-[0.7rem] border-t-2 border-[#5a298b]'>
+                        <div className='flex justify-between flex-wrap'>
+                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Sitemap</Link></p>
+                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Terms of Use and Privacy Policy</Link></p>
+                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Trust & Security</Link></p>
+                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Careers</Link></p>
+                            <p className='mr-3  '><Link to=''>Investor Charter</Link></p>
+                            <p className=''><Link to=''>Client Bank Details</Link></p>
+                        </div>
+                        <p className='hidden lg:flex '>Made with ❤️ in India | Copyright © 2024, <Link to='' className='text-[#dd92e4] '> Upstox</Link></p>
+                    </div>
+                </div>
 
 
-<div className='px-3 md:px-6 lg:px-6 xl:px-[4.6rem]'>
+{/* <div className='px-3 md:px-6 lg:px-6 xl:px-[4.6rem]'>
   <div className='px-3 lg:px-6 py-6 xl:px-[4.6rem] text-[#fff] block lg:flex content-center'>
     <span className='text-xl font-semibold w-[10%]'>Stocks</span>
     <ul className='flex flex-grow-0 lg:flex-grow-1 flex-wrap text-sm font-medium w-full'>
@@ -181,10 +167,10 @@ export default function Footers() {
       </li>
     </ul>
   </div>
-</div>
+</div> */}
 
 
-                <div className='px-3 md:px-6  lg:px-6 xl:px-[4.6rem]'>
+                {/* <div className='px-3 md:px-6  lg:px-6 xl:px-[4.6rem]'>
                     <div className='px-3 py-8 lg:px-6 xl:px-[4.6rem] text-xs font-normal text-[#eeebe6] border-y-2 border-[#5a298b] opacity-50 leading-[18px]'>
                         <p>Upstox Securities Pvt. Ltd.: SEBI Registration No. INZ000315837 | NSE TM Code: 13942 | BSE TM Code: 6155 | CDSL Reg No.: IN-DP-761-2024 | CIN: U65100DL2021PTC376860 | Compliance Officer: Mr. Kapil Jaikalyani. Tel No.: (022) 24229920. Email ID: <Link to='' className='text-[#dd92e4]'>compliance@upstox.com </Link> | Registered Address: 809, New Delhi House, Barakhamba Road, Connaught Place, New Delhi - 110001 | RKSV Commodities India Pvt. Ltd.: SEBI Registration No.: INZ000015837 | MCX TM Code: 46510 | CIN: U74900DL2009PTC189166 | Compliance Officer: Mr. Amit Lalan. Tel No.: (022) 24229920. Email ID: compliance@rksv.in | Registered Address: 807, New Delhi House, Barakhamba Road, Connaught Place, New Delhi - 110001. Correspondence Address: 30th Floor, Sunshine Tower, Senapati Bapat Marg, Dadar (West), Mumbai - 400013. | For any complaints, email at <Link to='' className='text-[#dd92e4]'>complaints@upstox.com</Link> and <Link to='' className='text-[#dd92e4]'>complaints.mcx@upstox.com</Link>.</p>
                         <br />
@@ -291,21 +277,9 @@ export default function Footers() {
                             </div>
                         )}
                     </div>
-                </div>
+                </div> */}
 
-                <div className='px-3 md:px-6   lg:px-6 xl:px-[4.6rem]'>
-                    <div className='px-3 py-6 lg:px-6 xl:px-[4.6rem] text-white flex justify-between flex-wrap font-medium text-[0.7rem]'>
-                        <div className='flex justify-between flex-wrap'>
-                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Sitemap</Link></p>
-                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Terms of Use and Privacy Policy</Link></p>
-                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Trust & Security</Link></p>
-                            <p className='mr-3 pb-2 md:pb-0 lg:pb-0'><Link to=''>Careers</Link></p>
-                            <p className='mr-3  '><Link to=''>Investor Charter</Link></p>
-                            <p className=''><Link to=''>Client Bank Details</Link></p>
-                        </div>
-                        <p className='hidden lg:flex '>Made with ❤️ in India | Copyright © 2024, <Link to='' className='text-[#dd92e4] '> Upstox</Link></p>
-                    </div>
-                </div>
+                
             </footer>
         </>
 
